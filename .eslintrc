@@ -1,0 +1,17 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true,
+        "node":true
+    },
+    "extends": "eslint:recommended",
+    "rules": {
+        "indent": ["error", 4],
+        "quotes": 
+        ["error",
+            "single",
+            { "avoidEscape": true, "allowTemplateLiterals": true }],
+        "semi": ["error", "always"],
+        "no-case-declarations": 0
+    }
+}

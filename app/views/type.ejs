@@ -1,0 +1,13 @@
+<%- include('./partials/header.ejs') %> 
+        <main class="article-container">
+            <p class="p-type">Cliquez sur un type pour voir tous les Pokémon de ce type</p> 
+            <div class="type-container">
+                <% for (let index = 0; index < arrayUniqueType.length; index++) { %> 
+                <a class="<%= arrayUniqueType[index] %>-container card-container" href="/type/<%= arrayUniqueType[index] %>">
+                <%= arrayUniqueType[index] %></a>
+                <% } %> 
+            </div>
+        </main>
+    </div>
+</body>
+</html>s

@@ -1,0 +1,14 @@
+<%- include('./partials/header.ejs') %> 
+        <main class="article-container">
+            <% for (pokemon of typeFound) {%> 
+                <article class="article"> 
+                    <a class="link" href="/<%= pokemon.numero %> ">
+                        <img class="pokemon-img" src="/img/<%= pokemon.numero %>.png" alt="<%= pokemon.nom %> ">
+                        <h2 class ="container-name">#<%= pokemon.numero %>  <%= pokemon.nom %> </h2>
+                    </a>
+                </article>
+                    <% } %> 
+        </main>
+    </div>
+</body>
+</html>

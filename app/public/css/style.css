@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+body {
+    background-color: #22272E;
+    display: flex;
+    justify-content: center;
+    font-family: Roboto, sans-serif;
+}
+
+.container {
+    background-color: #C14040;
+    width : 95vw;
+    display: flex;
+    align-items: center;    
+    flex-direction: column;
+}
+
+.header-container {
+    width: 90%;
+    background-color: white;
+    color :#C14040;
+    border-radius: 15px 15px 15px 15px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.header-title{
+    padding: 1rem;
+    font-weight: 300;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.header-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.link-header {
+    text-decoration: none;
+    color :#C14040;
+    padding: 0.5rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+.link-header--marginright {
+    margin-right: 1.5rem;
+}
+.article-container{
+    text-align: center;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem;
+}
+.link {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    cursor: pointer;
+}
+.article {
+    width: 28%;
+    padding: 1rem;
+    background-color: #982C2C;
+    border-radius: 15px 15px 15px 15px;
+    margin : 0.5rem;
+
+}
+.container-img {
+    height: 30rem;
+    width: 100%;
+    object-fit : cover;
+    cursor: pointer;
+}
+.container-name{
+    color: white;
+}
+.main-container{
+    width: 100%;
+}
+.container-submain {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+}
+.pokemon-name{
+    margin: 1rem;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.container-pokemon{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    
+}
+.img-pokemon{
+    margin: 1rem;
+}
+.container-stats{
+    background-color:#982C2C ;
+    border-radius:15px 15px 15px 15px ;
+    margin: 1rem;
+    padding: 1rem;
+    width: 70%;
+}
+.h3-stats{
+    margin: 1rem;
+}
+.h4-stats{
+    margin: 1rem;
+    font-size: 1.33rem;
+    margin-bottom: 2rem;
+}
+
+.div-stats{
+    display: flex;
+    position : relative;
+    margin: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.category-stat{
+    display: relative;
+}
+.p-stats{
+    position: absolute;
+    right: 67%;
+}
+.jauge-vide{
+    position: absolute;
+    /* left: 290px; */
+    right: 0px;
+    width: 50%;
+    height: 1.5rem;
+    border-radius: 5px;
+    background-color: #632B2B;  
+}
+.jauge-pleine{
+    width: 0%;
+    height: 1.5rem;
+    border-radius: 5px;
+    background-color: white;  
+}
+.link-accueil {
+    text-decoration: none;
+    color: white;
+    margin: 1rem;
+}
+.p-type {
+    margin: 1rem;
+    color: white;
+}
+.type-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card-container {
+    border-radius: 5px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    vertical-align: center;
+    color: white;
+    width: 20.5%;
+    padding: 1rem;
+    background-color: blue;
+    margin: 0.33rem;
+    font-weight: 700;
+}
+.type-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.pokemon-type--container {
+    text-align: center;
+    width: 100px;
+    padding: 0.33rem;
+    border-radius: 5px;
+    margin: 0.33rem;
+}
+.link-type {
+    text-decoration: none;
+    color: white;
+}
+.Acier-container{
+    background-color: #AAAABB;
+}
+.Combat-container{
+    background-color: #BB5544;
+}
+.Dragon-container{
+    background-color: #7766EE;
+}
+.Eau-container{
+    background-color: #3399FF;
+}
+.Electrik-container{
+    background-color: #FFBB33;
+}
+.Feu-container{
+    background-color: #FF4422;
+}
+.Glace-container{
+    background-color: #77DDFF;
+}
+.Insecte-container{
+    background-color: #AABB22;
+}
+.Normal-container{
+    background-color: #BBAABB;
+}
+.Plante-container{
+    background-color: #77CC55;
+}
+.Poison-container{
+    background-color: #AA5599;
+}
+.Psy-container{
+    background-color: #FF5599;
+}
+.Roche-container{
+    background-color: #BBAA66;
+}
+.Sol-container{
+    background-color: #DDBB55;
+}
+.Spectre-container{
+    background-color: #6666BB;
+}
+.Vol-container{
+    background-color: #6699FF;
+}
+
+

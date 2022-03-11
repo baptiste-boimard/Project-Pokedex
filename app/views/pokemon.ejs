@@ -1,0 +1,46 @@
+<%- include('./partials/header.ejs') %> 
+        <main class="main-container">           
+               <div class="container-submain">
+                   <h2 class="pokemon-name">Détails de <%= pokemonFound.nom %> </h2>
+                   <div class="container-pokemon">
+                       <div class="container-image--pokemon">
+                           <img class="img-pokemon" src="/img/<%= pokemonFound.numero %>.png" alt="<%= pokemonFound.nom%>">
+                       </div>
+                       <div class ="container-stats">
+                            <h3 class="h3-stats">#<%= pokemonFound.numero %> <%= pokemonFound.nom%></h3>
+                                <div class="type-container">
+                                    <% for (let index =0 ; index < pokemonFound.type.length; index++) { %> 
+                                        <a class="link-type" href="/type/<%=pokemonFound.type[index]%>">
+                                            <div class="<%=pokemonFound.type[index]%>-container pokemon-type--container">
+                                                <%= pokemonFound.type[index] %>
+                                            </div>
+                                        </a>
+                                    <% } %> 
+                                </div>
+                            <h4 class="h4-stats">Statistique</h4>
+                            <% for (let index = 2; index < 8; index++) {%>
+                                <div class="div-stats">
+                                    <h5 class="category-stat"><%= Object.keys(pokemonFound)[index] %> </h5>
+                                    <% const keyvalue = Object.keys(pokemonFound)[index] %>                         
+                                    <p class ="p-stats"> <%= pokemonFound[keyvalue] %></p>
+                                    <div class="jauge-vide">
+                                        <% const valeur = pokedex.filter(category => category[keyvalue]) %> 
+                                        <% const arrayValue = [] %>
+                                        <% for (pokemon of pokedex) { %>  
+                                        <% const value = pokemon[keyvalue] %> 
+                                        <% arrayValue.push(value) %> 
+                                        <% } %> 
+                                        <% const max = Math.max(...arrayValue) %> 
+                                        <% const jaugeValue = (pokemonFound[keyvalue]/max)*100 %>
+                                        <div style="width : <%= jaugeValue %>%" class="jauge-pleine"> </div>
+                                    </div>
+                                </div>
+                            <% } %> 
+                       </div>
+                    </div>
+                    <a href="/" class="link-accueil">Revenir à l'accueil</a>
+               </div>
+        </main>
+    </div>
+</body>
+</html>
