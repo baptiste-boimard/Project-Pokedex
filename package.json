@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/O-clock-Atome/du-rab-du-rab-du-rab-veille-pokedex-baptiste-boimard#readme",
   "dependencies": {
+    "dotenv": "^16.0.0",
     "ejs": "^3.1.6",
     "express": "^4.17.2",
     "node-dev": "^7.1.0"
