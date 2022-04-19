@@ -2,7 +2,7 @@
 const express = require('express');
 const app = express();
 //Définition du port utilisé
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 5050;
 //Importation des modules custom,data,locals, etc..
 const router = require('./app/router.js');
 app.set('view engine', 'ejs');

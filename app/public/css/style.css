@@ -6,13 +6,17 @@ body {
     justify-content: center;
     font-family: Roboto, sans-serif;
 }
-
+.main-container{
+    height: 100%;
+}
 .container {
+    height: 100%;
     background-color: #C14040;
-    width : 95vw;
+    width : 95%;
     display: flex;
     align-items: center;    
     flex-direction: column;
+    padding-bottom: 3rem;
 }
 
 .header-container {
@@ -64,8 +68,8 @@ body {
     cursor: pointer;
 }
 .article {
-    width: 28%;
-    padding: 1rem;
+    width: 16%;
+    padding: 1.3rem;
     background-color: #982C2C;
     border-radius: 15px 15px 15px 15px;
     margin : 0.5rem;
@@ -246,3 +250,81 @@ body {
 }
 
 
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .article {
+        width: 28%;
+        padding: 1.3rem;
+        background-color: #982C2C;
+        border-radius: 15px 15px 15px 15px;
+        margin : 0.5rem;
+    }
+    .container-name{
+        margin-top: 0.5rem;
+    }
+
+    .container-image--pokemon{
+        transform: scale(0.6);   
+    }
+    .pokemon-name{
+        font-size: 1.5rem;
+    }
+    .container-pokemon{
+        flex-direction: column;
+        align-items: center;
+        margin: -6rem;
+        
+    }
+    .type-container{
+        transform: scale(0.7);
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .h3-stats {
+        font-size: 1.4rem;
+        text-align: center;
+        margin: 0;
+    }
+    .h4-stats{
+        font-size: 1.3rem;
+        text-align: center;
+        margin: 0.2rem;
+
+    }
+    .container-stats{
+        padding: 0.3rem 2rem;
+        margin: -3rem;
+    }
+    .div-stats{
+        margin: 0.6rem -1rem;
+    }
+
+    .jauge-vide{
+        width: 40%;
+    }
+    .p-stats{
+        right: 50%;
+    }
+    .link-accueil{
+        margin-top: 2rem;
+    }
+    .footer{
+        margin-top: 12rem;
+    }
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 950px) {
+    .container-pokemon{
+        flex-direction: column;
+        align-items: center;
+    }
+    .p-stats{
+        right: 56% ;
+    }
+    .h3-stats{
+        text-align: center;
+    }
+    .type-container{
+        justify-content: center; 
+    }
+  } 
