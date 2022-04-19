@@ -1,7 +1,7 @@
 {
-  "name": "du-rab-du-rab-du-rab-veille-pokedex-baptiste-boimard",
+  "name": "Pokédex by @Punky",
   "version": "1.0.0",
-  "description": "Apprentis professeurs Chen, j'ai une requête pour vous ! Je souhaiterais un pokédex tout beau, tout neuf !",
+  "description": "Apprentis professeurs Chen, voici un pokédex tout beau, tout neuf !",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/O-clock-Atome/du-rab-du-rab-du-rab-veille-pokedex-baptiste-boimard.git"
+    "url": ""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/O-clock-Atome/du-rab-du-rab-du-rab-veille-pokedex-baptiste-boimard/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/O-clock-Atome/du-rab-du-rab-du-rab-veille-pokedex-baptiste-boimard#readme",
+  "homepage": "",
   "dependencies": {
     "dotenv": "^16.0.0",
     "ejs": "^3.1.6",
